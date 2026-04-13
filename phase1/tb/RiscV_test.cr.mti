@@ -1,0 +1,88 @@
+F:/Risc-V/phase1/rtl/pc_reg.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/pc_reg.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module pc_reg
+
+Top level modules:
+	pc_reg
+
+} {} {}} F:/Risc-V/phase1/rtl/id_ex.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/id_ex.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module id_ex
+
+Top level modules:
+	id_ex
+
+} {} {}} F:/Risc-V/phase1/tb/tb.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/tb/tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} F:/Risc-V/phase1/rtl/if_id.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/if_id.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module if_id
+
+Top level modules:
+	if_id
+
+} {} {}} F:/Risc-V/phase1/rtl/ex.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/ex.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ex
+
+Top level modules:
+	ex
+
+} {} {}} F:/Risc-V/phase1/rtl/id.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/id.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module id
+
+Top level modules:
+	id
+
+} {} {}} F:/Risc-V/phase1/rtl/rom.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/rom.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} F:/Risc-V/phase1/rtl/defines.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/defines.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} F:/Risc-V/phase1/tb/open_risc_v_soc.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/tb/open_risc_v_soc.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module open_risc_v_soc
+
+Top level modules:
+	open_risc_v_soc
+
+} {} {}} F:/Risc-V/phase1/rtl/open_risc_v.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/open_risc_v.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module open_risc_v
+
+Top level modules:
+	open_risc_v
+
+} {} {}} F:/Risc-V/phase1/rtl/regs.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/regs.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module regs
+
+Top level modules:
+	regs
+
+} {} {}} F:/Risc-V/phase1/rtl/dff_set.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/dff_set.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module dff_set
+
+Top level modules:
+	dff_set
+
+} {} {}} F:/Risc-V/phase1/rtl/ifetch.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/ifetch.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ifetch
+
+Top level modules:
+	ifetch
+
+} {} {}}
