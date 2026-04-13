@@ -2,9 +2,9 @@
 module tb;
 
 	reg clk;
-	reg rst;
+	reg rst_n;
 	
-	
+	//test
 	
 	always #10 clk = ~clk;
 	
