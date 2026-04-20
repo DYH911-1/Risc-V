@@ -11,7 +11,7 @@ module open_risc_v_soc (
 
     open_risc_v open_risc_v_inst (
     .clk                (clk),
-    .rst              (rst),
+    .rst                (rst),
     .inst_i             (rom_inst_o),
     .ins_addr_o         (open_risc_v_ins_addr_o)
     );

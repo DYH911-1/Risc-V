@@ -19,6 +19,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	id_ex
 
+} {} {}} F:/Risc-V/pase2_4/tb/tb.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/pase2_4/tb/tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
 } {} {}} F:/Risc-V/pase2_4/rtl/if_id.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/pase2_4/rtl/if_id.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module if_id

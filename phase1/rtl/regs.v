@@ -42,7 +42,7 @@ module regs(
             reg2_rdata_o = regs[reg2_raddr_i];
     end
 
-    // 写端口：时序逻辑，必须用非阻塞赋值 <=
+    // 写端口
     always @(posedge clk ) begin
         if (rst == 1'b0) begin
             // 修复：初始化全部32个寄存器 0~31

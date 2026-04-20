@@ -2,6 +2,8 @@
 module if_id(
 	input wire clk,
 	input wire rst,
+	//from ctrl
+	input wire hold_flag_i,  
 	input wire [31:0]  inst_i, 
 	input wire [31:0]  inst_addr_i,
 	output wire[31:0]  inst_addr_o, 
@@ -15,8 +17,8 @@ module if_id(
     end
 */  
     // 寄存【指令】：复位时输出空指令，否则锁存指令
-    dff_set #(32) dff1 (clk,rst,`INST_NOP,inst_i,inst_o);
+    dff_set #(32) dff1 (clk,rst,hold_flag_i,`INST_NOP,inst_i,inst_o);
     // 寄存【地址】：复位时输出0，否则锁存地址
-    dff_set #(32) dff2 (clk,rst,32'b0,inst_addr_i,inst_addr_o);
+    dff_set #(32) dff2 (clk,rst,hold_flag_i,32'b0,inst_addr_i,inst_addr_o);
 
 endmodule
