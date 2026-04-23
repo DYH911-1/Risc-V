@@ -20,7 +20,7 @@ module tb;
 	
 	//rom 初始值
 	initial begin
-		$readmemh("./inst_txt/rv32ui-p-blt.txt",tb.open_risc_v_soc_inst.rom_inst.rom_mem);
+		$readmemh("F:/Risc-V/pase2_4/tb/inst_txt/rv32ui-p-blt.txt",tb.open_risc_v_soc_inst.rom_inst.rom_mem);
 	end
 
 

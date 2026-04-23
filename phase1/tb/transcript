@@ -1,0 +1,36 @@
+vsim -gui work.tb -voptargs=+acc
+# vsim -gui work.tb -voptargs="+acc" 
+# Start time: 19:29:24 on Apr 23,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.tb(fast)
+# Loading work.open_risc_v_soc(fast)
+# Loading work.open_risc_v(fast)
+# Loading work.pc_reg(fast)
+# Loading work.ifetch(fast)
+# Loading work.if_id(fast)
+# Loading work.dff_set(fast)
+# Loading work.id(fast)
+# Loading work.regs(fast)
+# Loading work.id_ex(fast)
+# Loading work.dff_set(fast__1)
+# Loading work.dff_set(fast__2)
+# Loading work.ex(fast)
+# Loading work.ctrl(fast)
+# Loading work.rom(fast)
+add wave -position insertpoint  \
+sim:/tb/open_risc_v_soc_inst/open_risc_v_inst/regs_inst/regs
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+############################
+########  pass  !!!#########
+############################
+# End time: 19:29:55 on Apr 23,2026, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 1

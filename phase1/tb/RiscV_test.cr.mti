@@ -50,19 +50,19 @@ Top level modules:
 } {} {}} F:/Risc-V/phase1/rtl/defines.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/defines.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
-} {} {}} F:/Risc-V/phase1/rtl/open_risc_v.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/open_risc_v.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module open_risc_v
-
-Top level modules:
-	open_risc_v
-
 } {} {}} F:/Risc-V/phase1/tb/open_risc_v_soc.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/tb/open_risc_v_soc.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module open_risc_v_soc
 
 Top level modules:
 	open_risc_v_soc
+
+} {} {}} F:/Risc-V/phase1/rtl/open_risc_v.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/open_risc_v.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module open_risc_v
+
+Top level modules:
+	open_risc_v
 
 } {} {}} F:/Risc-V/phase1/rtl/regs.v {1 {vlog -work work -vopt -stats=none F:/Risc-V/phase1/rtl/regs.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
