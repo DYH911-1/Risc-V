@@ -10,16 +10,16 @@ z2
 cModel Technology
 dF:/Modelsim/riscv/tb
 T_opt
-!s110 1776944693
-VU=MRCXNAPEMi7PXYdcoIJ0
+!s110 1777038825
+VJk^hV[gDm[[^Ul0Dm56WZ1
 04 2 4 work tb fast 0
-=16-745d2271c485-69ea0635-12c-290c
+=2-745d2271c485-69eb75e9-68-4c20
 o-quiet -auto_acc_if_foreign -work work +acc
 Z0 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
 vctrl
-Z1 !s110 1776944691
+Z1 !s110 1777038822
 !i10b 1
 !s100 nmZ3]MbZ2K[6TVLW6GH4J2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,14 +28,14 @@ Z3 dF:/Risc-V/pase2_4/tb
 Z4 w1776762108
 8F:/Risc-V/pase2_4/rtl/ctrl.v
 FF:/Risc-V/pase2_4/rtl/ctrl.v
-!i122 287
+!i122 339
 L0 1 25
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 Z6 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z7 !s108 1776944691.000000
+Z7 !s108 1777038822.000000
 !s107 F:/Risc-V/pase2_4/rtl/ctrl.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Risc-V/pase2_4/rtl/ctrl.v|
 !i113 0
@@ -51,7 +51,7 @@ R3
 R4
 8F:/Risc-V/pase2_4/rtl/dff_set.v
 FF:/Risc-V/pase2_4/rtl/dff_set.v
-!i122 288
+!i122 340
 L0 1 19
 R5
 R6
@@ -67,15 +67,15 @@ R0
 vex
 R1
 !i10b 1
-!s100 YQ11WNZYV7h^boNXH7n093
+!s100 W<b1L`bMhM0]66Pa@jK;43
 R2
-Ie]i7ijMm0Yi2bR7f_7BWF2
+I[K8Wfn8[jGkZbS1_AYHZS3
 R3
-w1776851557
+w1777033764
 8F:/Risc-V/pase2_4/rtl/ex.v
 FF:/Risc-V/pase2_4/rtl/ex.v
-!i122 289
-L0 3 294
+!i122 341
+L0 3 496
 R5
 R6
 r1
@@ -90,15 +90,15 @@ R0
 vid
 R1
 !i10b 1
-!s100 9bnm2loS[3ZBWji0iBk]f3
+!s100 ^<iKc_b0U`dib4G62_[3i1
 R2
-ID];lIOG3Sc=E6b2Cne^Qj2
+IziJAMQmJ_?81U?gDe@j5V1
 R3
-R4
+w1777031080
 8F:/Risc-V/pase2_4/rtl/id.v
 FF:/Risc-V/pase2_4/rtl/id.v
-!i122 290
-L0 4 191
+!i122 342
+L0 4 265
 R5
 R6
 r1
@@ -120,7 +120,7 @@ R3
 R4
 8F:/Risc-V/pase2_4/rtl/id_ex.v
 FF:/Risc-V/pase2_4/rtl/id_ex.v
-!i122 291
+!i122 343
 L0 3 46
 R5
 R6
@@ -140,10 +140,10 @@ R1
 R2
 I[n8M3?3`CUd3Y2WOR7e;A0
 R3
-R4
+w1777036741
 8F:/Risc-V/pase2_4/rtl/if_id.v
 FF:/Risc-V/pase2_4/rtl/if_id.v
-!i122 292
+!i122 344
 L0 3 17
 R5
 R6
@@ -166,7 +166,7 @@ R3
 R4
 8F:/Risc-V/pase2_4/rtl/ifetch.v
 FF:/Risc-V/pase2_4/rtl/ifetch.v
-!i122 293
+!i122 345
 L0 1 22
 R5
 R6
@@ -182,15 +182,15 @@ R0
 vopen_risc_v
 R1
 !i10b 1
-!s100 Hz]6]_M5bLKe2TS_0046d3
+!s100 AiAmUHm?JZf@EeY]1G;K=0
 R2
-Ih^HPD8PK3f_d5?9V^E_4`2
+I@bEP9H7MYoIiC<PPYWi1m3
 R3
-R4
+w1777032124
 8F:/Risc-V/pase2_4/rtl/open_risc_v.v
 FF:/Risc-V/pase2_4/rtl/open_risc_v.v
-!i122 294
-L0 1 179
+!i122 346
+L0 1 195
 R5
 R6
 r1
@@ -205,15 +205,15 @@ R0
 vopen_risc_v_soc
 R1
 !i10b 1
-!s100 ehUAE]EJSiW9No;W`K6ka3
+!s100 M^B`HgHNk2nzjdUJ[kJYm3
 R2
-I2]A2GQL0;h]<0UinC5dMC3
+IEFkeX9C^HN>7ZH>4=KJ^83
 R3
-R4
+w1777032305
 8F:/Risc-V/pase2_4/tb/open_risc_v_soc.v
 FF:/Risc-V/pase2_4/tb/open_risc_v_soc.v
-!i122 298
-L0 1 26
+!i122 350
+L0 1 48
 R5
 R6
 r1
@@ -235,7 +235,7 @@ R3
 R4
 8F:/Risc-V/pase2_4/rtl/pc_reg.v
 FF:/Risc-V/pase2_4/rtl/pc_reg.v
-!i122 295
+!i122 347
 L0 1 18
 R5
 R6
@@ -255,10 +255,10 @@ R1
 R2
 I0GkkATVcVCECH3:M_7PZ>0
 R3
-R4
+w1777012396
 8F:/Risc-V/pase2_4/rtl/regs.v
 FF:/Risc-V/pase2_4/rtl/regs.v
-!i122 296
+!i122 348
 L0 1 54
 R5
 R6
@@ -281,7 +281,7 @@ R3
 R4
 8F:/Risc-V/pase2_4/rtl/rom.v
 FF:/Risc-V/pase2_4/rtl/rom.v
-!i122 297
+!i122 349
 L0 1 12
 R5
 R6
@@ -297,14 +297,14 @@ R0
 vtb
 R1
 !i10b 1
-!s100 A]WfLV?dd9mz>IS2`_4]X0
+!s100 GdF8IBLe7gm=E97^:9W:_3
 R2
-IlCYiONcCA1P:T>dYKQl:53
+IJ>O0RDZ_S@DLo53C`gi9z1
 R3
-w1776944688
+w1777038819
 8F:\Risc-V\pase2_4\tb\tb.v
 FF:\Risc-V\pase2_4\tb\tb.v
-!i122 299
+!i122 351
 L0 1 63
 R5
 R6
