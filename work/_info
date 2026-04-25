@@ -9,11 +9,36 @@ z2
 !i10f 100
 cModel Technology
 Z0 df:/Risc-V
+vand_test
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1777125485
+!i10b 1
+!s100 B[9KXHKmUB>o`X7Cb`DDe1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ik:Cn[XbmWRe125mho]b9J3
+S1
+R0
+w1777110956
+8f:\Vivado_Project\1\project_1\project_1.srcs\sources_1\new\and_test.sv
+Ff:\Vivado_Project\1\project_1\project_1.srcs\sources_1\new\and_test.sv
+!i122 759
+L0 23 9
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1777125485.000000
+!s107 f:\Vivado_Project\1\project_1\project_1.srcs\sources_1\new\and_test.sv|
+!s90 -nologo|-work|work|f:\Vivado_Project\1\project_1\project_1.srcs\sources_1\new\and_test.sv|
+!i113 0
+Z5 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
 vclint
 !s110 1776587247
 !i10b 1
 !s100 O[aVeVMl9HzTfa:oiInYD3
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+R2
 In5BajD8FHRh9PmlP57JRg0
 R0
 w1776349360
@@ -21,8 +46,8 @@ w1776349360
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\core\clint.v
 !i122 95
 L0 22 221
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 OL;L;2020.4;71
+R3
+R4
 r1
 !s85 0
 31
@@ -30,22 +55,22 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\clint.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\clint.v|
 !i113 0
-Z4 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z5 tCvgOpt 0
+R5
+R6
 vcsr_reg
 !s110 1777022130
 !i10b 1
 !s100 U=PTm>?<d=0lBAB?9RoVf2
-R1
+R2
 IQK1JHz<nF`@S<EWS=GBlR0
 R0
-Z6 w1776078654
+Z7 w1776078654
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\csr_reg.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\core\csr_reg.v
 !i122 498
 L0 20 196
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -53,68 +78,72 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\csr_reg.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\csr_reg.v|
 !i113 0
-R4
 R5
+R6
 vctrl
-!s110 1777038687
-!i10b 1
-!s100 nmZ3]MbZ2K[6TVLW6GH4J2
 R1
-IQf7^`^<j8G@Z]YIf]eaEg2
+!s110 1777125783
+!i10b 1
+!s100 5>7aUZ2>0CE]><2GOVjSU2
+R2
+IOKIdVm43SKK0f;>CA5EK42
+S1
 R0
-Z7 w1776762108
-8f:\Risc-V\test1\rtl\ctrl.v
-Ff:\Risc-V\test1\rtl\ctrl.v
-!i122 579
+Z8 w1776762108
+8f:\Risc-V\test1_sv\rtl\ctrl.sv
+Ff:\Risc-V\test1_sv\rtl\ctrl.sv
+!i122 791
 L0 1 25
-R2
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777038687.000000
-!s107 f:\Risc-V\test1\rtl\ctrl.v|
-!s90 -nologo|-work|work|f:\Risc-V\test1\rtl\ctrl.v|
+!s108 1777125783.000000
+!s107 f:\Risc-V\test1_sv\rtl\ctrl.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\ctrl.sv|
 !i113 0
-R4
 R5
+R6
 vdff_set
-!s110 1777036118
-!i10b 1
-!s100 D7O`F4m;N`Z0c=Ifoh5:k3
 R1
-IBkTm9`X^ONc5Q`JcQ;g[D3
-R0
-R7
-8f:\Risc-V\pase2_4\rtl\dff_set.v
-Ff:\Risc-V\pase2_4\rtl\dff_set.v
-!i122 549
-L0 1 19
+!s110 1777125548
+!i10b 1
+!s100 L0GH^7gnB>10OGRRC_AVJ1
 R2
+IbSI9?HWFb=n<=404]c6PY0
+S1
+R0
+w1777049318
+8f:\Risc-V\test1_sv\rtl\dff_set.sv
+Ff:\Risc-V\test1_sv\rtl\dff_set.sv
+!i122 785
+L0 1 19
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777036118.000000
-!s107 f:\Risc-V\pase2_4\rtl\dff_set.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\dff_set.v|
+!s108 1777125548.000000
+!s107 f:\Risc-V\test1_sv\rtl\dff_set.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\dff_set.sv|
 !i113 0
-R4
 R5
+R6
 vdiv
 !s110 1776587839
 !i10b 1
 !s100 Zj`URRATX_BR^>EGm[W`Y3
-R1
+R2
 I^5ka<;XdBZ=Jl9OAQfJmR1
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\div.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\core\div.v
 !i122 141
 L0 22 192
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -122,45 +151,47 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\div.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\div.v|
 !i113 0
-R4
 R5
+R6
 vex
-Z8 !s110 1777038696
-!i10b 1
-!s100 W<b1L`bMhM0]66Pa@jK;43
 R1
-IeXi`bj[UeD>ac:5_MLUCa0
-R0
-w1777033764
-8f:\Risc-V\pase2_4\rtl\ex.v
-Ff:\Risc-V\pase2_4\rtl\ex.v
-!i122 590
-L0 3 496
+!s110 1777125519
+!i10b 1
+!s100 X4VIcoDIX@5K[hEES:9hF1
 R2
+IoYc5CW0f=M]?>PjJ>3LNR1
+S1
+R0
+w1777125519
+8f:\Risc-V\test1_sv\rtl\ex.sv
+Ff:\Risc-V\test1_sv\rtl\ex.sv
+!i122 767
+L0 3 508
 R3
+R4
 r1
 !s85 0
 31
-Z9 !s108 1777038696.000000
-!s107 f:\Risc-V\pase2_4\rtl\defines.v|f:\Risc-V\pase2_4\rtl\ex.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\ex.v|
+!s108 1777125519.000000
+!s107 f:\Risc-V\test1_sv\rtl\defines.sv|f:\Risc-V\test1_sv\rtl\ex.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\ex.sv|
 !i113 0
-R4
 R5
+R6
 vgpio
 !s110 1776587784
 !i10b 1
 !s100 DNZGE:G<:dG2W7ob[^VXY1
-R1
+R2
 Ik:N>jKGd;DKzTSDD1VS?g3
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\gpio.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\gpio.v
 !i122 102
 L0 19 80
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -168,114 +199,122 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\gpio.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\gpio.v|
 !i113 0
-R4
 R5
+R6
 vid
-R8
-!i10b 1
-!s100 ^<iKc_b0U`dib4G62_[3i1
 R1
-I?5WhK=aL__WGiPRMLhOJV2
-R0
-w1777031080
-8f:\Risc-V\pase2_4\rtl\id.v
-Ff:\Risc-V\pase2_4\rtl\id.v
-!i122 588
-L0 4 265
+!s110 1777125753
+!i10b 1
+!s100 kg^KX[8HFC]a8R6AS7Yz?2
 R2
+I]?R4N6;]CG<@78=>dHF4<2
+S1
+R0
+w1777125528
+8f:\Risc-V\test1_sv\rtl\id.sv
+Ff:\Risc-V\test1_sv\rtl\id.sv
+!i122 788
+L0 4 237
 R3
+R4
 r1
 !s85 0
 31
-R9
-!s107 f:\Risc-V\pase2_4\rtl\defines.v|f:\Risc-V\pase2_4\rtl\id.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\id.v|
+!s108 1777125753.000000
+!s107 f:\Risc-V\test1_sv\rtl\defines.sv|f:\Risc-V\test1_sv\rtl\id.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\id.sv|
 !i113 0
-R4
 R5
+R6
 vid_ex
-!s110 1777036175
-!i10b 1
-!s100 =[SA6^h5@N@6BC`m3[PmA1
 R1
-ImZRU8dTcZO6A48bkaPe;:1
+!s110 1777125770
+!i10b 1
+!s100 >2FXY:b3E3>XjTXjTkUlS0
+R2
+IfQ74N>iI8Me1cAJIeYfH[0
+S1
 R0
-R7
-8f:\Risc-V\pase2_4\rtl\id_ex.v
-Ff:\Risc-V\pase2_4\rtl\id_ex.v
-!i122 550
+w1777125523
+8f:\Risc-V\test1_sv\rtl\id_ex.sv
+Ff:\Risc-V\test1_sv\rtl\id_ex.sv
+!i122 790
 L0 3 46
-R2
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777036175.000000
-!s107 f:\Risc-V\pase2_4\rtl\defines.v|f:\Risc-V\pase2_4\rtl\id_ex.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\id_ex.v|
+!s108 1777125770.000000
+!s107 f:\Risc-V\test1_sv\rtl\defines.sv|f:\Risc-V\test1_sv\rtl\id_ex.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\id_ex.sv|
 !i113 0
-R4
 R5
+R6
 vif_id
-!s110 1777036741
-!i10b 1
-!s100 VIlP0=gKVaNX<>L[<`TV80
 R1
-Ig1Fc?D_[3G1<b1JK8]O<91
+!s110 1777125532
+!i10b 1
+!s100 O3m3Le2UZ`di`UCI>Rn7V1
+R2
+IEkXUiQG0O42FFm>k_BiW[2
+S1
 R0
-w1777036741
-8f:\Risc-V\pase2_4\rtl\if_id.v
-Ff:\Risc-V\pase2_4\rtl\if_id.v
-!i122 552
+w1777125531
+8f:\Risc-V\test1_sv\rtl\if_id.sv
+Ff:\Risc-V\test1_sv\rtl\if_id.sv
+!i122 770
 L0 3 17
-R2
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777036741.000000
-!s107 f:\Risc-V\pase2_4\rtl\defines.v|f:\Risc-V\pase2_4\rtl\if_id.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\if_id.v|
+!s108 1777125531.000000
+!s107 f:\Risc-V\test1_sv\rtl\defines.sv|f:\Risc-V\test1_sv\rtl\if_id.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\if_id.sv|
 !i113 0
-R4
 R5
+R6
 vifetch
-!s110 1777015838
-!i10b 1
-!s100 Ic[e9bEkGV4Wh[iVni1i<1
 R1
-I6XTHm]07CkHMan_2iPAL90
-R0
-R7
-8f:\Risc-V\pase2_4\rtl\ifetch.v
-Ff:\Risc-V\pase2_4\rtl\ifetch.v
-!i122 493
-L0 1 22
+!s110 1777125540
+!i10b 1
+!s100 c4nC>j8c;T235?H9bQ;?42
 R2
+IKR3RQIze2bla1C6kQR?4_3
+S1
+R0
+R8
+8f:\Risc-V\test1_sv\rtl\ifetch.sv
+Ff:\Risc-V\test1_sv\rtl\ifetch.sv
+!i122 778
+L0 1 22
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777015838.000000
-!s107 f:\Risc-V\pase2_4\rtl\ifetch.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\ifetch.v|
+!s108 1777125540.000000
+!s107 f:\Risc-V\test1_sv\rtl\ifetch.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\ifetch.sv|
 !i113 0
-R4
 R5
+R6
 vjtag_dm
 !s110 1777024184
 !i10b 1
 !s100 W0c45YQ[W_;eMkc7io]0]0
-R1
+R2
 I?@=JEe730M9ZBan@Cd5aP1
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_dm.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_dm.v
 !i122 509
 L0 27 316
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -283,137 +322,165 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_dm.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_dm.v|
 !i113 0
-R4
 R5
+R6
 vjtag_driver
-Z10 !s110 1777024271
+Z9 !s110 1777024271
 !i10b 1
 !s100 5[2P5S2G5[?MbFQ?hMd>91
-R1
+R2
 I=jWL8PI6IA3SBGZPcSa6m2
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_driver.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_driver.v
 !i122 511
 L0 23 273
-R2
 R3
+R4
 r1
 !s85 0
 31
-Z11 !s108 1777024271.000000
+Z10 !s108 1777024271.000000
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_driver.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_driver.v|
 !i113 0
-R4
 R5
+R6
 vjtag_top
-R10
+R9
 !i10b 1
 !s100 NbJn?zSW3La:aQ:ElVHkR0
-R1
+R2
 I0Y9f0L?04R8[3z?C;cJ7b1
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_top.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_top.v
 !i122 510
 L0 20 89
-R2
 R3
+R4
 r1
 !s85 0
 31
-R11
+R10
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\..\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_top.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\jtag_top.v|
 !i113 0
-R4
 R5
-vopen_risc_v
-Z12 !s110 1777038695
-!i10b 1
-!s100 AiAmUHm?JZf@EeY]1G;K=0
+R6
+vmyCPU
 R1
-IRUaBR]aGCXhm24dhQLQ[Y2
-R0
-w1777032124
-8f:\Risc-V\pase2_4\rtl\open_risc_v.v
-Ff:\Risc-V\pase2_4\rtl\open_risc_v.v
-!i122 586
-L0 1 195
+!s110 1777125484
+!i10b 1
+!s100 1<<<FdUF^F8niS578:?_B2
 R2
+IDR1<8PO8D9N9Yl0:^P^LU0
+S1
+R0
+w1745574565
+8f:\Vivado_Project\1\JYD2025_Contest-rv32i\digital_twin.srcs\sources_1\imports\new\myCPU.sv
+Ff:\Vivado_Project\1\JYD2025_Contest-rv32i\digital_twin.srcs\sources_1\imports\new\myCPU.sv
+!i122 758
+L0 22 174
 R3
+R4
 r1
 !s85 0
 31
-Z13 !s108 1777038695.000000
-!s107 f:\Risc-V\pase2_4\rtl\open_risc_v.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\open_risc_v.v|
+!s108 1777125484.000000
+!s107 f:\Vivado_Project\1\JYD2025_Contest-rv32i\digital_twin.srcs\sources_1\imports\new\myCPU.sv|
+!s90 -nologo|-work|work|f:\Vivado_Project\1\JYD2025_Contest-rv32i\digital_twin.srcs\sources_1\imports\new\myCPU.sv|
 !i113 0
-R4
 R5
+R6
+nmy@c@p@u
+vopen_risc_v
+!s110 1777124297
+!i10b 1
+!s100 M12nCfje881HONY3jzQ3=2
+R2
+Ink]k@KLk?LG5edZGzbAm;2
+R0
+R8
+8f:\Risc-V\phase1\rtl\open_risc_v.v
+Ff:\Risc-V\phase1\rtl\open_risc_v.v
+!i122 750
+L0 1 200
+R3
+R4
+r1
+!s85 0
+31
+!s108 1777124297.000000
+!s107 f:\Risc-V\phase1\rtl\open_risc_v.v|
+!s90 -nologo|-work|work|f:\Risc-V\phase1\rtl\open_risc_v.v|
+!i113 0
+R5
+R6
 vopen_risc_v_soc
-!s110 1777038694
+!s110 1777104058
 !i10b 1
 !s100 M^B`HgHNk2nzjdUJ[kJYm3
-R1
+R2
 I7LFX03SADmgBlXEoRY9Z>0
 R0
 w1777032305
 8f:\Risc-V\pase2_4\tb\open_risc_v_soc.v
 Ff:\Risc-V\pase2_4\tb\open_risc_v_soc.v
-!i122 582
+!i122 737
 L0 1 48
-R2
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777038694.000000
+!s108 1777104058.000000
 !s107 f:\Risc-V\pase2_4\tb\open_risc_v_soc.v|
 !s90 -nologo|-work|work|f:\Risc-V\pase2_4\tb\open_risc_v_soc.v|
 !i113 0
-R4
 R5
+R6
 vpc_reg
-!s110 1777038262
-!i10b 1
-!s100 YOaH3M6GWDOL]iaW7N<^<3
 R1
-IZjYPlg7PQzJ@T9g9[gcYg1
-R0
-R7
-8f:\Risc-V\test1\rtl\pc_reg.v
-Ff:\Risc-V\test1\rtl\pc_reg.v
-!i122 556
-L0 1 18
+!s110 1777126181
+!i10b 1
+!s100 l53[;]10[UY;[JJeBbQA32
 R2
+ITgdQaHU=gViCNhGNK8T:00
+S1
+R0
+w1777126181
+8f:\Risc-V\test1_sv\rtl\pc_reg.sv
+Ff:\Risc-V\test1_sv\rtl\pc_reg.sv
+!i122 795
+L0 1 18
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777038262.000000
-!s107 f:\Risc-V\test1\rtl\pc_reg.v|
-!s90 -nologo|-work|work|f:\Risc-V\test1\rtl\pc_reg.v|
+!s108 1777126181.000000
+!s107 f:\Risc-V\test1_sv\rtl\pc_reg.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\pc_reg.sv|
 !i113 0
-R4
 R5
+R6
 vram
 !s110 1777026852
 !i10b 1
 !s100 MDI4Yc5bTgS_Bd^ne0lP92
-R1
+R2
 IFo9]4:z8ii:ig1e9V2:Lg3
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\ram.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\ram.v
 !i122 514
-Z14 L0 20 31
-R2
+L0 20 31
 R3
+R4
 r1
 !s85 0
 31
@@ -421,45 +488,47 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\..\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\ram.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\ram.v|
 !i113 0
-R4
 R5
+R6
 vregs
-R12
-!i10b 1
-!s100 g6YM=Qi:CGdahNNGOiDD<1
 R1
-IT?1N>jMzdPmPMKOGVO=iQ1
-R0
-w1777012396
-8f:\Risc-V\pase2_4\rtl\regs.v
-Ff:\Risc-V\pase2_4\rtl\regs.v
-!i122 584
-L0 1 54
+!s110 1777125547
+!i10b 1
+!s100 kc[jZlmeO7@D7QBFP]mAi2
 R2
+IC>WKZ?WPAERN]b8mRHChR0
+S1
+R0
+w1777049314
+8f:\Risc-V\test1_sv\rtl\regs.sv
+Ff:\Risc-V\test1_sv\rtl\regs.sv
+!i122 783
+L0 1 54
 R3
+R4
 r1
 !s85 0
 31
-R13
-!s107 f:\Risc-V\pase2_4\rtl\regs.v|
-!s90 -nologo|-work|work|f:\Risc-V\pase2_4\rtl\regs.v|
+!s108 1777125547.000000
+!s107 f:\Risc-V\test1_sv\rtl\regs.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\regs.sv|
 !i113 0
-R4
 R5
+R6
 vrib
 !s110 1777023481
 !i10b 1
 !s100 ig6^JSd]h7k<Sb^[]dHNc3
-R1
+R2
 IODfoo3Z@ljJmJMT4`z^S[1
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\rib.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\core\rib.v
 !i122 502
 L0 21 320
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -467,114 +536,141 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\rib.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\rib.v|
 !i113 0
-R4
 R5
-vrom
-!s110 1777024140
-!i10b 1
-!s100 lVV0zV6S6Gl9W1i@2:llm3
-R1
-ILmcY[IB3lmLSi^P>oV[eP3
-R0
 R6
-8f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\rom.v
-Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\rom.v
-!i122 505
-R14
+vrom
+R1
+!s110 1777125545
+!i10b 1
+!s100 j2KzgX<L6Km4?[[<a=1RQ1
 R2
+IffVOZ0jnQJE?TL[9iSzQ13
+S1
+R0
+R8
+8f:\Risc-V\test1_sv\rtl\rom.sv
+Ff:\Risc-V\test1_sv\rtl\rom.sv
+!i122 782
+L0 1 12
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777024140.000000
-!s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\..\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\rom.v|
-!s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\rom.v|
+!s108 1777125545.000000
+!s107 f:\Risc-V\test1_sv\rtl\rom.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\rom.sv|
 !i113 0
-R4
 R5
+R6
 vspi
-Z15 !s110 1776587817
+Z11 !s110 1776587817
 !i10b 1
 !s100 jLNg];0d1W`c0W3`ROX0M2
-R1
+R2
 I0`LWQT`S_j^G=J_ofKQBF3
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\spi.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\spi.v
 !i122 112
 L0 19 226
-R2
 R3
+R4
 r1
 !s85 0
 31
-Z16 !s108 1776587817.000000
+Z12 !s108 1776587817.000000
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\spi.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\spi.v|
 !i113 0
-R4
 R5
+R6
 vtb
-!s110 1777038916
+!s110 1777104054
 !i10b 1
 !s100 GdF8IBLe7gm=E97^:9W:_3
-R1
+R2
 ISEO_W3ZVe]l8G0NHo3fG53
 R0
 w1777038819
 8f:\Risc-V\pase2_4\tb\tb.v
 Ff:\Risc-V\pase2_4\tb\tb.v
-!i122 594
+!i122 736
 L0 1 63
-R2
 R3
+R4
 r1
 !s85 0
 31
-!s108 1777038916.000000
+!s108 1777104054.000000
 !s107 f:\Risc-V\pase2_4\tb\tb.v|
 !s90 -nologo|-work|work|f:\Risc-V\pase2_4\tb\tb.v|
 !i113 0
-R4
 R5
+R6
+vtb_and_test
+R1
+!s110 1777125486
+!i10b 1
+!s100 MN;6cQd`_g_fc0g2E=QE00
+R2
+I]OcUMDieCzWf90RPVT5NA2
+S1
+R0
+w1777106018
+8f:\Vivado_Project\1\project_1\project_1.srcs\sim_1\new\tb_and_test.sv
+Ff:\Vivado_Project\1\project_1\project_1.srcs\sim_1\new\tb_and_test.sv
+!i122 760
+L0 8 25
+R3
+R4
+r1
+!s85 0
+31
+!s108 1777125486.000000
+!s107 f:\Vivado_Project\1\project_1\project_1.srcs\sim_1\new\tb_and_test.sv|
+!s90 -nologo|-work|work|f:\Vivado_Project\1\project_1\project_1.srcs\sim_1\new\tb_and_test.sv|
+!i113 0
+R5
+R6
 vtimer
-R15
+R11
 !i10b 1
 !s100 ?zS<1jI=`d7g=mBnB[Y582
-R1
+R2
 Ima7F<zaaYnm^YR8K<ncXZ0
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\timer.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\timer.v
 !i122 111
 L0 21 98
-R2
 R3
+R4
 r1
 !s85 0
 31
-R16
+R12
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\..\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\timer.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\timer.v|
 !i113 0
-R4
 R5
+R6
 vtinyriscv
 !s110 1776946297
 !i10b 1
 !s100 <D^`@5z?iRYA@2UlDR=072
-R1
+R2
 INP5fIC1cbcB9C:IgOekE00
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\tinyriscv.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\core\tinyriscv.v
 !i122 465
 L0 20 350
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -582,22 +678,22 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\tinyriscv.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\core\tinyriscv.v|
 !i113 0
-R4
 R5
+R6
 vtinyriscv_soc_top
 !s110 1776946418
 !i10b 1
 !s100 g6z?R`GIniG?0BbQDM8GL1
-R1
+R2
 I=H3m?<kaD8le8Afgf63Pf0
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\soc\tinyriscv_soc_top.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\soc\tinyriscv_soc_top.v
 !i122 470
 L0 20 344
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -605,22 +701,47 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\soc\..\core\defines.v|f:\TinRisc_V\tintriscv\tinyriscv\rtl\soc\tinyriscv_soc_top.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\soc\tinyriscv_soc_top.v|
 !i113 0
-R4
 R5
+R6
+vtop_riscv
+R1
+!s110 1777125622
+!i10b 1
+!s100 G[MFeZH[W9J2>Q^Sk30Re1
+R2
+I=0JNDU8??zE87T4j]4ZeO1
+S1
+R0
+w1777125622
+8f:\Risc-V\test1_sv\rtl\top_riscv.sv
+Ff:\Risc-V\test1_sv\rtl\top_riscv.sv
+!i122 787
+L0 1 190
+R3
+R4
+r1
+!s85 0
+31
+!s108 1777125622.000000
+!s107 f:\Risc-V\test1_sv\rtl\top_riscv.sv|
+!s90 -nologo|-work|work|f:\Risc-V\test1_sv\rtl\top_riscv.sv|
+!i113 0
+R5
+R6
 vuart
 !s110 1776587815
 !i10b 1
 !s100 :Y;9nUYSgF:H[z66X3<iM1
-R1
+R2
 IPF[;H09WOKQg6n;4cd=6:3
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\uart.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\uart.v
 !i122 110
 L0 19 311
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -628,22 +749,22 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\uart.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\perips\uart.v|
 !i113 0
-R4
 R5
+R6
 vuart_debug
 !s110 1777024272
 !i10b 1
 !s100 H=HcCZ;4f[2b>AiFd<H190
-R1
+R2
 Iae=5:jFEYI7ckHU6A>fmJ2
 R0
-R6
+R7
 8f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\uart_debug.v
 Ff:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\uart_debug.v
 !i122 512
 L0 44 393
-R2
 R3
+R4
 r1
 !s85 0
 31
@@ -651,5 +772,5 @@ r1
 !s107 f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\uart_debug.v|
 !s90 -nologo|-work|work|f:\TinRisc_V\tintriscv\tinyriscv\rtl\debug\uart_debug.v|
 !i113 0
-R4
 R5
+R6

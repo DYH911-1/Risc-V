@@ -1,5 +1,5 @@
 
-`include "defines.v"
+`include "defines.sv"
 
 module id(
 	//from if_id

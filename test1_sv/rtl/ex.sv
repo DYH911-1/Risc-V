@@ -1,4 +1,4 @@
-`include "defines.v"
+`include "defines.sv"
 
 module ex(
 	//from id_ex
@@ -227,8 +227,7 @@ module ex(
 						rd_wen_o  = 1'b0;					
 					end
 				endcase
-			end
-			// ===================== B型分支指令 =====================			
+			end			
 			`INST_TYPE_B:begin
 				rd_data_o = 32'b0; 
 				rd_addr_o = 5'b0;
