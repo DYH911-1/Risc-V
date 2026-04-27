@@ -2,41 +2,41 @@
 
 module ex(
 	//from id_ex
-	input wire[31:0] inst_i			,	
-	input wire[31:0] inst_addr_i	,
-	input wire[31:0] op1_i			,
-	input wire[31:0] op2_i			,
-	input wire[4:0]  rd_addr_i		,
-	input wire 		 rd_wen_i		,
-	input wire[31:0] base_addr_i	,
-	input wire[31:0] addr_offset_i	,
+	input logic[31:0] inst_i		,	
+	input logic[31:0] inst_addr_i	,
+	input logic[31:0] op1_i			,
+	input logic[31:0] op2_i			,
+	input logic[4:0]  rd_addr_i		,
+	input logic 	  rd_wen_i	,
+	input logic[31:0] base_addr_i	,
+	input logic[31:0] addr_offset_i	,
 	//to regs
-	output reg[4:0] rd_addr_o		,
-	output reg[31:0]rd_data_o		,
-	output reg 	    rd_wen_o		,
+	output logic[4:0] rd_addr_o		,
+	output logic[31:0]rd_data_o		,
+	output logic 	  rd_wen_o		,
 	
 	//to ctrl
-	output reg[31:0]jump_addr_o		,
-	output reg   	jump_en_o		,
-	output reg  	hold_flag_o		,
+	output logic[31:0]jump_addr_o	,
+	output logic   	  jump_en_o		,
+	output logic  	  hold_flag_o	,
 	
 	//to mem write
-	output reg	 	ex_mem_wr_req_o	,//读写请求信号 1表示写，0表示读
-	output reg[1:0] ex_perip_mask_o	,//新增：直接输出2位读写掩码，替代原来的mem_wr_sel_o
-	output reg[31:0]ex_mem_addr_o	,//统一读写地址，替代原来的mem_wr_addr_o
-	output reg[31:0]ex_mem_wr_data_o,//写ram数据
+	output logic	 	ex_mem_wr_req_o	,//读写请求信号 1表示写，0表示读
+	output logic[1:0] ex_perip_mask_o	,//新增：直接输出2位读写掩码，替代原来的mem_wr_sel_o
+	output logic[31:0]ex_mem_addr_o	,//统一读写地址，替代原来的mem_wr_addr_o
+	output logic[31:0]ex_mem_wr_data_o,//写ram数据
 	//from mem read
-	input wire[31:0]ex_mem_rd_data_i //读数据
+	input logic[31:0]ex_mem_rd_data_i //读数据
 );
 
-	wire[6:0] opcode; 
-	wire[4:0] rd; 
-	wire[2:0] func3; 
-	wire[4:0] rs1;
-	wire[4:0] rs2;
-	wire[6:0] func7;
-	wire[11:0]imm;
-	wire[4:0] shamt;
+	logic[6:0] opcode; 
+	logic[4:0] rd; 
+	logic[2:0] func3; 
+	logic[4:0] rs1;
+	logic[4:0] rs2;
+	logic[6:0] func7;
+	logic[11:0]imm;
+	logic[4:0] shamt;
 	
 	assign opcode = inst_i[6:0];
 	assign rd 	  = inst_i[11:7];
@@ -50,9 +50,9 @@ module ex(
 	
 	// tpye branch
 	// 比较逻辑
-	wire  	   op1_i_equal_op2_i;
-	wire       op1_i_less_op2_i_signed;
-	wire       op1_i_less_op2_i_unsigned;
+	logic  	   op1_i_equal_op2_i;
+	logic       op1_i_less_op2_i_signed;
+	logic       op1_i_less_op2_i_unsigned;
 	
 	assign	   op1_i_less_op2_i_signed 	 = ($signed(op1_i) < $signed(op2_i))?1'b1:1'b0;
 	assign	   op1_i_less_op2_i_unsigned = (op1_i < op2_i)  ? 1'b1:1'b0;
@@ -61,13 +61,13 @@ module ex(
 
 
 	//ALU 
-	wire[31:0] op1_i_add_op2_i			;//加法器
-	wire[31:0] op1_i_and_op2_i			;//与
-	wire[31:0] op1_i_xor_op2_i			;//异或
-	wire[31:0] op1_i_or_op2_i			;//或
-	wire[31:0] op1_i_shift_left_op2_i	;//左移
-	wire[31:0] op1_i_shift_right_op2_i	;//右移
-	wire[31:0] base_addr_add_addr_offset;//计算地址单元
+	logic[31:0] op1_i_add_op2_i			;//加法器
+	logic[31:0] op1_i_and_op2_i			;//与
+	logic[31:0] op1_i_xor_op2_i			;//异或
+	logic[31:0] op1_i_or_op2_i			;//或
+	logic[31:0] op1_i_shift_left_op2_i	;//左移
+	logic[31:0] op1_i_shift_right_op2_i	;//右移
+	logic[31:0] base_addr_add_addr_offset;//计算地址单元
 	
 	assign op1_i_add_op2_i 			 	= op1_i + op2_i;
 	assign op1_i_and_op2_i 			 	= op1_i & op2_i;
@@ -78,19 +78,20 @@ module ex(
 	assign base_addr_add_addr_offset  	= base_addr_i + addr_offset_i;
 	
 	// tpye I ，SRA算术右移掩码
-	wire[31:0] SRA_mask;
+	logic[31:0] SRA_mask;
 	assign 	   SRA_mask = (32'hffff_ffff) >> op2_i[4:0];
 	
 	
-	//wire[31:0] store_offset_addr = {{20{inst_i[31]}},inst_i[31:25],inst_i[11:7]};
+	//logic[31:0] store_offset_addr = {{20{inst_i[31]}},inst_i[31:25],inst_i[11:7]};
 	// tpye store && load index         访存地址偏移的最低两位
-	// wire[1:0]  addr_offset_low 	= base_addr_add_addr_offset[1:0];
-	// wire[1:0]  addr_offset_low 	= base_addr_add_addr_offset[1:0];
+
     // 访存地址偏移（用于字节/半字定位）
-    wire[1:0] addr_offset_low = base_addr_add_addr_offset[1:0];	
+    logic[1:0] addr_offset_low ;		//不能直接用logic[1:0] addr_offset_low = addr_offset_i[1:0];会有静态初始化问题❗
+
+	assign	   addr_offset_low = base_addr_add_addr_offset[1:0];	
+
 	
-	
-	always @(*)begin
+	always_comb begin
 		
 		case(opcode)	
 			// ===================== I型运算指令 =====================
@@ -414,7 +415,7 @@ module ex(
 						ex_mem_wr_req_o  = 1'b1;
 						ex_perip_mask_o  = 2'b00;
 						ex_mem_addr_o = base_addr_add_addr_offset;
-						case(addr_offset_low)
+						case(addr_offset_low[1:0])
 							2'b00:begin
 								ex_mem_wr_data_o = {24'b0,op2_i[7:0]};
 							end

@@ -1,0 +1,39 @@
+F:/Risc-V/test1_sv/rtl/id.sv {1 {vlog -work work -vopt -sv -stats=none F:/Risc-V/test1_sv/rtl/id.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module id
+
+Top level modules:
+	id
+
+} {} {}} F:/Risc-V/test1_sv/rtl/defines.sv {1 {vlog -work work -vopt -sv -stats=none F:/Risc-V/test1_sv/rtl/defines.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} F:/Risc-V/test1_sv/rtl/id_ex.sv {1 {vlog -work work -vopt -sv -stats=none F:/Risc-V/test1_sv/rtl/id_ex.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module id_ex
+
+Top level modules:
+	id_ex
+
+} {} {}} F:/Risc-V/test1_sv/rtl/regs.sv {1 {vlog -work work -vopt -sv -stats=none F:/Risc-V/test1_sv/rtl/regs.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module regs
+
+Top level modules:
+	regs
+
+} {} {}} F:/Risc-V/test1_sv/tb/myCPU.sv {1 {vlog -work work -vopt -sv -stats=none F:/Risc-V/test1_sv/tb/myCPU.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module myCPU
+
+Top level modules:
+	myCPU
+
+} {} {}} F:/Risc-V/test1_sv/rtl/ifetch.sv {1 {vlog -work work -vopt -sv -stats=none F:/Risc-V/test1_sv/rtl/ifetch.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ifetch
+
+Top level modules:
+	ifetch
+
+} {} {}}

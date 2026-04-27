@@ -3,39 +3,39 @@
 
 module id(
 	//from if_id
-	input wire[31:0] inst_i		   ,
-	input wire[31:0] inst_addr_i   ,
+	input logic[31:0] inst_i		   ,
+	input logic[31:0] inst_addr_i      ,
 		
 	// to regs 
-	output reg[4:0] rs1_addr_o	   ,
-	output reg[4:0] rs2_addr_o	   ,
+	output logic[4:0] rs1_addr_o	   ,
+	output logic[4:0] rs2_addr_o	   ,
 	// from regs
-	input wire[31:0] rs1_data_i	   ,
-	input wire[31:0] rs2_data_i	   ,
+	input logic[31:0] rs1_data_i	   ,
+	input logic[31:0] rs2_data_i	   ,
 	
 	//to id_ex
-	output reg[31:0] inst_o		   ,
-	output reg[31:0] inst_addr_o   ,
-	output reg[31:0] op1_o		   ,
-	output reg[31:0] op2_o		   ,
-	output reg[4:0]  rd_addr_o	   ,
-	output reg 		 reg_wen	   ,
-	output reg[31:0] base_addr_o   ,
-	output reg[31:0] addr_offset_o 	
+	output logic[31:0] inst_o		   ,
+	output logic[31:0] inst_addr_o     ,
+	output logic[31:0] op1_o		   ,
+	output logic[31:0] op2_o		   ,
+	output logic[4:0]  rd_addr_o	   ,
+	output logic 	   reg_wen	  	   ,
+	output logic[31:0] base_addr_o     ,
+	output logic[31:0] addr_offset_o 	
 	
 );
 
-	wire[6:0] opcode; 
-	wire[4:0] rd	; 
-	wire[2:0] func3	; 
-	wire[4:0] rs1	;
-	wire[4:0] rs2	;
-	wire[6:0] func7	;
-	wire[11:0]imm	;
-	wire[4:0] shamt	;
+	logic[6:0] opcode	; 
+	logic[4:0] rd		; 
+	logic[2:0] func3	; 
+	logic[4:0] rs1	 	;
+	logic[4:0] rs2	 	;
+	logic[6:0] func7	;
+	logic[11:0]imm		;
+	logic[4:0] shamt	;
 	
-	assign opcode = inst_i[6:0];
-	assign rd 	  = inst_i[11:7];
+	assign opcode = inst_i[6:0]  ;
+	assign rd 	  = inst_i[11:7] ;
 	assign func3  = inst_i[14:12];
 	assign rs1 	  = inst_i[19:15];
 	assign rs2 	  = inst_i[24:20];
@@ -44,7 +44,7 @@ module id(
 	assign shamt  = inst_i[24:20];
 	
 	
-	always @(*)begin
+	always_comb begin
 		inst_o  	= inst_i;
 		inst_addr_o = inst_addr_i;  
 		

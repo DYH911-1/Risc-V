@@ -1,28 +1,28 @@
 `include "defines.sv"
 
 module id_ex(
-	input wire clk					,
-	input wire rst					,
-	//from ctrl
-	input wire hold_flag_i			,
-	//from id
-	input wire[31:0] inst_i			,
-	input wire[31:0] inst_addr_i	,
-	input wire[31:0] op1_i			,	
-	input wire[31:0] op2_i			,
-	input wire[4:0]  rd_addr_i		,	
-	input wire 		 reg_wen_i		,
-	input wire[31:0] base_addr_i	,
-	input wire[31:0] addr_offset_i	,	
-	//to ex
-	output wire[31:0] inst_o		,
-	output wire[31:0] inst_addr_o	,
-	output wire[31:0] op1_o			,	
-	output wire[31:0] op2_o			,
-	output wire[4:0]  rd_addr_o		,	
-	output wire 	  reg_wen_o		,	
-	output wire[31:0] base_addr_o	,
-	output wire[31:0] addr_offset_o		
+	input logic clk						,
+	input logic rst						,
+	//from ctrl	
+	input logic hold_flag_i				,
+	//from id	
+	input logic[31:0] inst_i			,
+	input logic[31:0] inst_addr_i		,
+	input logic[31:0] op1_i				,	
+	input logic[31:0] op2_i				,
+	input logic[4:0]  rd_addr_i			,	
+	input logic 		 reg_wen_i		,
+	input logic[31:0] base_addr_i		,
+	input logic[31:0] addr_offset_i		,	
+	//to ex	
+	output logic[31:0] inst_o			,
+	output logic[31:0] inst_addr_o		,
+	output logic[31:0] op1_o			,	
+	output logic[31:0] op2_o			,
+	output logic[4:0]  rd_addr_o		,	
+	output logic 	  reg_wen_o			,	
+	output logic[31:0] base_addr_o		,
+	output logic[31:0] addr_offset_o		
 );
 
 	dff_set #(32) dff1(clk,rst,hold_flag_i,`INST_NOP,inst_i,inst_o);

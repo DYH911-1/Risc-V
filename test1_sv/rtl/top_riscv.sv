@@ -1,71 +1,71 @@
 module top_riscv(
-	input   wire 		  clk   		 	,
-	input   wire 		  rst		     	, 
+	input   logic 		  clk   		 	,
+	input   logic 		  rst		     	, 
 	//指令
-	input   wire [31:0]   inst_i		 	,
-	output  wire [31:0]   inst_addr_o	 	,
+	input   logic [31:0]   inst_i		 	,
+	output  logic [31:0]   inst_addr_o	 	,
 	//to mem write
-	output  wire	 	  	  mem_wr_req_o		,//读写请求信号 1表示写，0表示读
-	output  wire [1:0]    perip_mask_o		,//新增：直接输出2位读写掩码，替代原来的mem_wr_sel_o
-	output  wire [31:0]   mem_addr_o		,//统一读写地址，替代原来的mem_wr_addr_o
-	output  wire [31:0]   mem_wr_data_o		,//写ram数据
+	output  logic	 	  	  mem_wr_req_o	,//读写请求信号 1表示写，0表示读
+	output  logic [1:0]    perip_mask_o		,//新增：直接输出2位读写掩码，替代原来的mem_wr_sel_o
+	output  logic [31:0]   mem_addr_o		,//统一读写地址，替代原来的mem_wr_addr_o
+	output  logic [31:0]   mem_wr_data_o	,//写ram数据
 	//from mem read
-	input   wire [31:0]   mem_rd_data_i		 //读数据
+	input   logic [31:0]   mem_rd_data_i		 //读数据
 );
 	//pc to if
-	wire[31:0] pc_reg_pc_o;
+	logic[31:0] pc_reg_pc_o;
 	
 	//if to if_id
-	wire[31:0] if_inst_addr_o;
-	wire[31:0] if_inst_o;	
+	logic[31:0] if_inst_addr_o;
+	logic[31:0] if_inst_o;	
 	
 	// if_id to id
-	wire[31:0] if_id_inst_addr_o;
-	wire[31:0] if_id_inst_o;	
+	logic[31:0] if_id_inst_addr_o;
+	logic[31:0] if_id_inst_o;	
 	
 	//ex to regs
-	wire[4:0]  ex_rd_addr_o;
-	wire[31:0] ex_rd_data_o;
-	wire       ex_reg_wen_o;
+	logic[4:0]  ex_rd_addr_o;
+	logic[31:0] ex_rd_data_o;
+	logic       ex_reg_wen_o;
 
 	//id to regs
-	wire[4:0] id_rs1_addr_o;
-	wire[4:0] id_rs2_addr_o;
+	logic[4:0] id_rs1_addr_o;
+	logic[4:0] id_rs2_addr_o;
 	
 	//id to id_ex
-	wire[31:0] id_inst_o;
-	wire[31:0] id_inst_addr_o;
-	wire[31:0] id_op1_o;
-	wire[31:0] id_op2_o;
-	wire[4:0]  id_rd_addr_o;
-	wire       id_reg_wen;
-	wire[31:0] id_base_addr_o;	
-	wire[31:0] id_addr_offset_o;	
+	logic[31:0] id_inst_o;
+	logic[31:0] id_inst_addr_o;
+	logic[31:0] id_op1_o;
+	logic[31:0] id_op2_o;
+	logic[4:0]  id_rd_addr_o;
+	logic       id_reg_wen;
+	logic[31:0] id_base_addr_o;	
+	logic[31:0] id_addr_offset_o;	
 
 	//regs to id
-	wire[31:0] regs_reg1_rdata_o;
-	wire[31:0] regs_reg2_rdata_o;
+	logic[31:0] regs_reg1_rdata_o;
+	logic[31:0] regs_reg2_rdata_o;
 	
 	
 	//id_ex to ex
-	wire[31:0] id_ex_inst_o;
-	wire[31:0] id_ex_inst_addr_o;
-	wire[31:0] id_ex_op1_o;
-	wire[31:0] id_ex_op2_o;
-	wire[4:0]  id_ex_rd_addr_o;
-	wire       id_ex_reg_wen;
-	wire[31:0] id_ex_base_addr_o;	
-	wire[31:0] id_ex_addr_offset_o;
+	logic[31:0] id_ex_inst_o;
+	logic[31:0] id_ex_inst_addr_o;
+	logic[31:0] id_ex_op1_o;
+	logic[31:0] id_ex_op2_o;
+	logic[4:0]  id_ex_rd_addr_o;
+	logic       id_ex_reg_wen;
+	logic[31:0] id_ex_base_addr_o;	
+	logic[31:0] id_ex_addr_offset_o;
 	
 	//ex  to ctrl
-	wire[31:0] ex_jump_addr_o;
-	wire  	   ex_jump_en_o;
-	wire 	   ex_hold_flag_o;
+	logic[31:0] ex_jump_addr_o;
+	logic  	   ex_jump_en_o;
+	logic 	   ex_hold_flag_o;
 	//ctrl to pc_reg
-	wire[31:0] ctrl_jump_addr_o;
-	wire  	   ctrl_jump_en_o;
+	logic[31:0] ctrl_jump_addr_o;
+	logic  	   ctrl_jump_en_o;
 	//ctrl to if_id id_ex
-	wire 	   ctrl_hold_flag_o;		
+	logic 	   ctrl_hold_flag_o;		
 	
 	
 	pc_reg pc_reg_inst(
